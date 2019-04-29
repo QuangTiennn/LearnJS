@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- KTSNT -->
+    <h2>Kiểm Tra Số Nguyên Tố</h2>
+    <form class="form-KTNST" method="get" action="">
+        Nhập Số :<input type="number" value="" id="snhap"/>
+        <input type="button" value="kết quả" onclick="ktnt()"/>
+   
+        Kết Quả: <input type="text" value="" id="kqsnt"/>
+        
+        
+    </form><br/>
+
+    <!-- calculator -->
+    <h2>Các Phép Toán + - * /</h2>
+    <form class="calcul">
+        Nhập số a: <input type="number" id="sA"/><br/>
+        Nhập Số b: <input type="number" id="sB"/><br/>
+        <input type="button" onclick="phepcong()" value="+"/>
+        <input type="button" onclick="pheptru()" value="-"/>
+        <input type="button" onclick="phepnhan()" value="*"/>
+        <input type="button" onclick="phepchia()" value="/"/><br/>
+
+        Kết Quả : <input id="kq"/>
+    </form>
+
+
+
+    <input type="button" onclick="wellcome()"value="wellcom"/>
+
+
+    <form class="for" method="GET">
+        nhập input : <input type="text" id="number1"/>        
+        <input type="button" onclick="printNumber" value="kết quả" id="kq1"/>
+        <input id="kqz">
+    </form>
+    <div id="result"></div>
+    <script type="text/javascript" src="../learnJs/learnJS.js"></script>
+</body>
+</html>
