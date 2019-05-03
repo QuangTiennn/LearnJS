@@ -51,39 +51,73 @@
 
 // var sv = new sinhVien();
 // sv.setTen("tôi là Nguyễn Văn A");
-// sv.setTuoi(21);
+// sv.setTuoi(21) ;
 // sv.setmaSinhVien("A123456");
 // console.log(sv.getTen);
 // console.log(sv.getTuoi);
 // console.log(sv.getmaSinhVien);
 
 
-function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
- }
+// function Person(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//  }
  
- Person.prototype.getFullName = function() {
-    return this.firstName + ' ' + this.lastName;
- }
+//  Person.prototype.getFullName = function() {
+//     return this.firstName + ' ' + this.lastName;
+//  }
  
- function Student(firstName, lastName) {
-    Person.call(this, firstName, lastName);
- }
+//  function Student(firstName, lastName) {
+//     Person.call(this, firstName, lastName);
+//  }
  
- Student.prototype = Object.create(Person.prototype);
+//  Student.prototype = Object.create(Person.prototype);
  
- const Name = new Student('Nguyen', 'Tien');
- console.log(Name.getFullName());
+//  const Name = new Student('Nguyen', 'Tien');
+//  console.log(Name.getFullName());
 
 
 
 
+// function person (_name){
+//    var name = _name;
+//    this.setName = function(_name){
+//       name = _name;
+//    }
+//    this.getName = function(){
+//       return name;
+//    }
+// }
+
+// var person1 = new person("coders Tokyo");
+// console.log(person1.name);  
+                
+// console.log(person1.getName());
+
+// person1.setName("coder X");
+// console.log(person1.getName());
 
 
+var tom = {
+   name : "tom",
+   stomach : [],
+   eat : function (mouse){
+      this.stomach.push(mouse);
+      return this;
 
+   }
+};
+ 
+function mouse(name){
+   this.name = name;
 
+}
+var m1 = new mouse("m1");
+var m2 = new mouse("m2");
+var m3 = new mouse("m3");
 
+tom.eat(m1).eat(m2).eat(m3);
+console.log(tom.stomach);
 
 
 
